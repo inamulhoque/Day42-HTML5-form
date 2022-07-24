@@ -9,18 +9,6 @@ text.addEventListener('input', function () {
     else textError.textContent = "Name is Incorrect";
 });
 
-const password = document.querySelector("#pwd");
-const passwordError = document.querySelector(".password-error");
-password.addEventListener('input', function () {
-    let pwdRegex = RegExp("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=])(?=\\S+$).{7,}$");
-    if (pwdRegex.test(pwdRegex.value)) {
-        passwordError.textContent = "";
-    }
-    else {
-        passwordError.textContent = "Password format invalid";
-    }    
-});
-
 const email = document.querySelector("#email");
 const emailError = document.querySelector(".email-error");
 email.addEventListener('input', function(){
@@ -41,10 +29,4 @@ phone.addEventListener('input', function(){
     } else {
         phoneError.textContent = "Invalid phone number";
     }
-});
-
-const salary = document.querySelector("#salary");
-const output = document.querySelector(".salary-output");
-salary.addEventListener('input', function () {
-    output.textContent = salary.value;
 });
