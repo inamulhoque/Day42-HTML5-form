@@ -30,3 +30,20 @@ phone.addEventListener('input', function(){
         phoneError.textContent = "Invalid phone number";
     }
 });
+const password = document.querySelector("#pwd");
+const passwordError = document.querySelector(".password-error");
+password.addEventListener('input', function () {
+    let pwdRegex = RegExp("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=])(?=\\S+$).{7,}$");
+    if (pwdRegex.test(pwdRegex.value)) {
+        passwordError.textContent = "";
+    }
+    else {
+        passwordError.textContent = "Password format invalid";
+    }    
+});
+
+const salary = document.querySelector("#salary");
+const output = document.querySelector(".salary-output");
+salary.addEventListener('input', function () {
+    output.textContent = salary.value;
+});
