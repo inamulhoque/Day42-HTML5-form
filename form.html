@@ -16,17 +16,14 @@
     <div>
         <label for "text">Text input type for Name: </label>
         <input type="text" id="text" name="text">
-        <error-output class="text-error" for="text"></error-output>
     </div>
     <div>    
         <label for="pwd">Password input type: </label>
         <input type="password" id="pwd" name="pwd">
-        <error-output class="password-error" for="password"></error-output>
     </div>
     <div>
         <label for="email">E-mail input type: </label>
         <input type="email" id="email" name="email">
-        <error-output class="email-error" for="email"></error-output>
     </div>
     <div>
         <label for="url">URL input type: </label>
@@ -39,7 +36,6 @@
     <div>    
         <label for="tel">Phone input type: </label>
         <input type="tel" id="tel" name="tel">
-        <error-output class="tel-error" for="tel"></error-output>
     </div>
     <div>
         <label for="search">Search input type: </label>
@@ -57,7 +53,7 @@
         <output class="salary-output" for="salary">40000</output>
     </div>
     <div>
-        <button>Submit</button>
+        <button id="submitButton" onclick="validation()">Submit</button>
     </div>
     </form>
 </body>
