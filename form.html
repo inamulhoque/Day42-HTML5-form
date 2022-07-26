@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Input Types</title>
     <link rel="stylesheet" href="form.css">
-    <script src="form.js"></script>
 </head>
 <body>
     <form>
@@ -16,22 +15,19 @@
     <div>
         <label for "text">Text input type for Name: </label>
         <input type="text" id="text" name="text">
-        <error-output class="text-error" for="text"></error-output>
     </div>
     <div>    
         <label for="pwd">Password input type: </label>
         <input type="password" id="pwd" name="pwd">
-        <error-output class="password-error" for="password"></error-output>
     </div>
     <div>
         <label for="email">E-mail input type: </label>
         <input type="email" id="email" name="email">
-        <error-output class="email-error" for="email"></error-output>
     </div>
-    <div>
+    <!-- <div>
         <label for="url">URL input type: </label>
         <input type="url" id="url" name="url">
-    </div>
+    </div> -->
     <div>        
         <label for="number">Number input type: </label>
         <input type="number" id="number" name="number">
@@ -39,12 +35,11 @@
     <div>    
         <label for="tel">Phone input type: </label>
         <input type="tel" id="tel" name="tel">
-        <error-output class="tel-error" for="tel"></error-output>
     </div>
-    <div>
+    <!-- <div>
         <label for="search">Search input type: </label>
         <input type="search" id="search" name="search">
-    </div>
+    </div> -->
         
     <div class="nativeDateTimePicker">
         <label for="party">Choose a date and time:</label>
@@ -53,12 +48,17 @@
     </div>
     <div>    
         <label for="salary">Choose your salary: </label>
-        <input type="range" id="salary" name="salary" min="30000" max="50000" steps="20" value="40000">
+        <input type="range" id="salary" name="salary" min="30000" max="50000">
         <output class="salary-output" for="salary">40000</output>
     </div>
     <div>
-        <button>Submit</button>
+        <button type="submit" id="buttonSubmit" onclick="validation()">Submit</button>
     </div>
     </form>
+
+
+
+    <script src="form.js"></script>
+
 </body>
 </html>
