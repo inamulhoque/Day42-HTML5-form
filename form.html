@@ -16,7 +16,6 @@
     <div>
         <label for "text">Text input type for Name: </label>
         <input type="text" id="text" name="text">
-        <error-output class="text-error" for="text"></error-output>
     </div>
     <div>    
         <label for="pwd">Password input type: </label>
@@ -54,7 +53,7 @@
         <output class="salary-output" for="salary">40000</output>
     </div>
     <div>
-        <button>Submit</button>
+        <button id="submitButton" onclick="validation()">Submit</button>
     </div>
     </form>
 </body>
